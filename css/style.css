@@ -1,0 +1,23 @@
+body{
+    background-color: #F3F5FC;
+    margin: 0 3vw;
+
+    /*Tipografía Inter*/
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: auto;
+    font-weight: 400;  
+}
+
+img {
+    width: fit-content;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 6vw;
+    margin: 2.5rem 0;
+}
