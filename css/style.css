@@ -88,10 +88,22 @@ main {
     color: white;
 }
 
+.btn-encriptar:hover {
+    background-color: #072B61;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
 .btn-desencriptar {
-    background-color: #D8DFE8;
+    background-color: #F3F5FC;
     border: 1.5px solid #0A3871;
     color: #0A3871;
+}
+
+.btn-desencriptar:hover {
+    background-color: #D8DFE8;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .bloque-derecho{
