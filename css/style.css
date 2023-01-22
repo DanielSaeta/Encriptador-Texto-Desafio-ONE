@@ -1,3 +1,4 @@
+/* Estilos Globales */
 body {
     background-color: #F3F5FC;
     margin: 0 3%;
@@ -15,10 +16,12 @@ img {
 }
 
 input {
+    height: 4rem;
     padding: 1rem;
     border-radius: 1.5rem;
     font-family: 'Inter';
     font-size: 1rem;
+    line-height: 150%;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -29,10 +32,12 @@ h2 {
     color: #343A40;
 }
 
+/* Cabecera */
 .logo-alura {
     position: absolute;
 }
 
+/* Cuerpo */
 main {
     display: flex;
     flex-flow: row wrap;
@@ -41,8 +46,9 @@ main {
     margin: 2rem 0;
 }
 
+/* Encriptador */
 .bloque-izq {
-    flex: 1 40%;
+    flex: 1 50%;
     display: flex;
     flex-flow: row wrap;
     margin-top: 6rem;
@@ -55,7 +61,7 @@ main {
     background-color: #F3F5FC;
     font-family: 'Inter';
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 150%;
     color: #0A3871;
     border: 0;
     resize: unset;
@@ -99,37 +105,71 @@ main {
     color: white;
 }
 
-.btn-encriptar:hover {
-    background-color: #072B61;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-}
-
-.btn-desencriptar {
-    background-color: #F3F5FC;
+.btn-desencriptar, .btn-copiar {
+    background-color: unset;
     border: 1.5px solid #0A3871;
     color: #0A3871;
 }
 
-.btn-desencriptar:hover {
-    background-color: #D8DFE8;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
+/* Instrucción */
 .bloque-der-instruccion {
-    flex: 1 26%;
+    flex: 1 17%;
     display: none;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 2rem;
-    padding: 3%;
+    padding: 2.5%;
+}
+
+.textos {
+    margin-top: 2rem;
     text-align: center;
 }
 
 .bloque-der-instruccion p {
     margin-top: 1rem;
     color: #495057;
+}
+
+/* Mensaje de Resultado */
+.bloque-der-mensaje {
+    flex: 1 17%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.25%;
+}
+
+.bloque-der-mensaje textarea {
+    flex: 1 100%;
+    background-color: white;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #495057;
+    border: 0;
+    resize: unset;
+    padding: 1.25%;
+}
+
+.btn-copiar {
+    flex: 1 100%;
+}
+
+/* Hover Botones */
+.btn-encriptar:hover {
+    background-color: #072B61;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover, .btn-copiar:hover {
+    background-color: #D8DFE8;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
