@@ -14,6 +14,14 @@ img {
     height: auto;
 }
 
+input {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-family: 'Inter';
+    font-size: 1rem;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 h2 {
     font-size: 1.5rem;
     line-height: 120%;
@@ -33,7 +41,7 @@ main {
     margin: 2rem 0;
 }
 
-.bloque-izquierdo {
+.bloque-izq {
     flex: 1 40%;
     display: flex;
     flex-flow: row wrap;
@@ -42,7 +50,7 @@ main {
     padding-left: 12%;
 }
 
-.bloque-izquierdo textarea {
+.bloque-izq textarea {
     flex: 1 100%;
     background-color: #F3F5FC;
     font-family: 'Inter';
@@ -54,7 +62,7 @@ main {
     padding: 2rem 2%;
 }
 
-.bloque-izquierdo textarea::placeholder {
+.bloque-izq textarea::placeholder {
     opacity: 1;
     color: #0A3871;
 }
@@ -83,11 +91,6 @@ main {
 
 .botones input {
     flex: 1 50%;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    font-family: 'Inter';
-    font-size: 1rem;
-    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .btn-encriptar {
@@ -114,9 +117,9 @@ main {
     cursor: pointer;
 }
 
-.bloque-derecho {
+.bloque-der-instruccion {
     flex: 1 26%;
-    display: flex;
+    display: none;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -126,7 +129,7 @@ main {
     text-align: center;
 }
 
-.bloque-derecho p {
+.bloque-der-instruccion p {
     margin-top: 1rem;
     color: #495057;
 }
