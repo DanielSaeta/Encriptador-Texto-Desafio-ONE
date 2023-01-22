@@ -1,8 +1,7 @@
 /* Estilos Globales */
 body {
     background-color: #F3F5FC;
-    margin: 0 3%;
-
+    
     /*Tipografía Inter Global*/
     font-family: 'Inter';
     font-style: normal;
@@ -34,6 +33,10 @@ h2 {
 }
 
 /* Cabecera */
+header, main {
+    padding: 0 3%;
+}
+
 .logo-alura {
     position: absolute;
 }
@@ -47,14 +50,14 @@ main {
     margin: 2rem 0;
 }
 
-/* Encriptador */
+/* Bloque Izquierdo: Encriptador */
 .bloque-izq {
     flex: 1 50%;
     display: flex;
     flex-flow: row wrap;
     margin-top: 6rem;
     margin-bottom: 2rem;
-    padding-left: 12%;
+    padding-left: 10%;
 }
 
 .bloque-izq textarea {
@@ -112,16 +115,26 @@ main {
     color: #0A3871;
 }
 
-/* Instrucción */
-.bloque-der-instruccion {
-    flex: 1 17%;
-    display: none;
-    flex-flow: column;
-    justify-content: center;
+/* Bloque Derecho: Instrucción y Mensaje */
+.bloque-der {
+    flex: 1 34%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: white;
     border-radius: 2rem;
-    padding: 2.5%;
+}
+
+/* Instrucción */
+.instruccion {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 7.5%;
+}
+
+.instruccion img {
+    width: max-content;
 }
 
 .textos {
@@ -129,24 +142,19 @@ main {
     text-align: center;
 }
 
-.bloque-der-instruccion p {
+.textos p {
     margin-top: 1rem;
     color: #495057;
 }
 
 /* Mensaje de Resultado */
-.bloque-der-mensaje {
-    flex: 1 17%;
-    display: flex;
+.mensaje {
+    display: none;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 1.25%;
+    padding: 7.5%;
 }
 
-.bloque-der-mensaje textarea {
+.mensaje textarea {
     flex: 1 100%;
     background-color: white;
     font-family: 'Inter';
@@ -155,11 +163,12 @@ main {
     color: #495057;
     border: 0;
     resize: unset;
-    padding: 1.25%;
+    padding: 0%;
 }
 
 .btn-copiar {
     flex: 1 100%;
+    margin-top: 2rem;
 }
 
 /* Botones Hover y Active */
@@ -177,4 +186,25 @@ main {
 
 .btn-encriptar:active, .btn-desencriptar:active, .btn-copiar:active {
     transform: scale(0.9);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #072B61;
+    padding: 1rem;
+}
+
+footer p {
+    display: inline-flex;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+    color: white;
+}
+
+footer strong {
+    font-weight: 700;
 }

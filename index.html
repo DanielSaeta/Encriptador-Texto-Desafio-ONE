@@ -12,6 +12,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--Static Icon Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
     </head>
 
     <body>
@@ -36,23 +39,29 @@
                 </fieldset>                 
             </form>
 
-            <div class="bloque-der-instruccion">
-                <img src="images/search-img.png" alt="Ilustración de persona buscando con lupa">
+            <div class="bloque-der">
+                <div class="instruccion">
+                    <img src="images/search-img.png" alt="Ilustración de persona buscando con lupa">
 
-                <div class="textos">
-                    <h2>Ningún mensaje fue encontrado</h2>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <div class="textos">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
                 </div>
-            </div>
 
-            <form class="bloque-der-mensaje">
-                <textarea cols="15" rows="10" readonly></textarea>
-                <input class="btn-copiar" type="button" value="Copiar">
-            </form>
+                <form class="mensaje">
+                    <textarea cols="15" rows="10" readonly></textarea>
+                    <input class="btn-copiar" type="button" value="Copiar">
+                </form> 
+            </div>
         </main>
 
         <footer>
-            <p>Desarrolado por Daniel Saeteros | <a mailto="daniel_saeteros@outlook.com">daniel_saeteros@outlook.com</a> | &copy Copyright 2023</p>
+            <p>Desarrolado por <strong>Daniel Saeteros</strong></p>
+            <p>|</p>
+            <p><span class="material-symbols-outlined">mail</span> <a mailto="daniel_saeteros@outlook.com">daniel_saeteros@outlook.com</a></p>
+            <p>|</p> 
+            <p>&copy Copyright <script>document.write(new Date().getFullYear())</script></p>
         </footer>
     </body>
 
