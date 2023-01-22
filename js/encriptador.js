@@ -5,7 +5,9 @@ var mensaje = document.querySelector(".mensaje");
 
 function resultadoEncriptar(){
     var textoIngresado = encriptar(inputText.value);
-    console.log(textoIngresado);
+    //muestra el mismo texto ingresado en el textarea
+    outputText.value = textoIngresado;
+    //oculta la instrucción y muestra el resultado
     instruccion.style.display = "none";
     mensaje.style.display = "inline-flex";
 } 
