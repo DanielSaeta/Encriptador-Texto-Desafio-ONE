@@ -80,6 +80,7 @@ main {
     border-radius: 1.5rem;
     font-family: 'Inter';
     font-size: 1rem;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .btn-encriptar {
