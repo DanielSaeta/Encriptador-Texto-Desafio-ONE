@@ -7,6 +7,7 @@
         <title>Encriptador de Texto - Desafío ONE</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/encriptador.js"></script>
 
         <!--Tipografía Inter-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
 
         <main>
             <form class="bloque-izq">  
-                <textarea name="input text" cols="20" rows="3" placeholder="Ingrese el texto aqui" required></textarea>
+                <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aqui" required></textarea>
 
                 <fieldset class="indicacion">
                     <img src="images/icono-exclamacion.png" alt="Icono de Exclamación">
@@ -50,7 +51,7 @@
                 </div>
 
                 <form class="mensaje">
-                    <textarea name="output text" cols="15" rows="8" readonly></textarea>
+                    <textarea class="output-text" cols="15" rows="8" readonly></textarea>
                     <input class="btn-copiar" type="button" value="Copiar">
                 </form> 
             </div>
