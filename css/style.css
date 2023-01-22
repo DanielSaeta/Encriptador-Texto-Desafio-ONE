@@ -1,11 +1,11 @@
-body{
+body {
     background-color: #F3F5FC;
-    margin: 0 3vw;
+    margin: 0 3%;
 
-    /*Tipografía Inter*/
+    /*Tipografía Inter Global*/
     font-family: 'Inter';
     font-style: normal;
-    line-height: auto;
+    line-height: 150%;
     font-weight: 400;  
 }
 
@@ -14,7 +14,14 @@ img {
     height: auto;
 }
 
-.logo-alura{
+h2 {
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.logo-alura {
     position: absolute;
 }
 
@@ -22,32 +29,32 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 6vw;
+    gap: 6%;
     margin: 2rem 0;
 }
 
-.bloque-izquierdo{
+.bloque-izquierdo {
+    flex: 1 40%;
     display: flex;
     flex-flow: row wrap;
-    flex: 1 40%;
     margin-top: 6rem;
     margin-bottom: 2rem;
     padding-left: 12%;
 }
 
-.bloque-izquierdo textarea{
-    background-color: #F3F5FC;
+.bloque-izquierdo textarea {
     flex: 1 100%;
+    background-color: #F3F5FC;
     font-family: 'Inter';
     font-size: 2rem;
     line-height: 3rem;
     color: #0A3871;
     border: 0;
     resize: unset;
-    padding: 2rem 3%;
+    padding: 2rem 2%;
 }
 
-.bloque-izquierdo textarea::placeholder{
+.bloque-izquierdo textarea::placeholder {
     opacity: 1;
     color: #0A3871;
 }
@@ -66,7 +73,7 @@ main {
     font-size: 0.75rem;
 }
 
-.botones{
+.botones {
     flex: 1 100%;
     display: flex;
     flex-flow: row;
@@ -91,7 +98,7 @@ main {
 
 .btn-encriptar:hover {
     background-color: #072B61;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
@@ -107,8 +114,19 @@ main {
     cursor: pointer;
 }
 
-.bloque-derecho{
-    background-color: darkorange;
-    width: 26%;
-    padding: 0 3%;
+.bloque-derecho {
+    flex: 1 26%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 3%;
+    text-align: center;
+}
+
+.bloque-derecho p {
+    margin-top: 1rem;
+    color: #495057;
 }
