@@ -26,11 +26,11 @@
 
         <main>
             <form class="bloque-izq">  
-                <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)"></textarea>
 
                 <fieldset class="indicacion">
                     <img src="images/icono-exclamacion.png" alt="Icono de Exclamación">
-                    <p class="texto-indicacion">Solo letras minúsculas, sin números y acentos</p>
+                    <p class="texto-indicacion">Solo letras minúsculas sin acentos y sin números.</p>
                 </fieldset>
 
                 <fieldset class="botones">

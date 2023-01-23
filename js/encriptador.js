@@ -3,6 +3,18 @@ var outputText = document.querySelector(".output-text");
 var instruccion = document.querySelector(".instruccion");
 var mensaje = document.querySelector(".mensaje");
 
+//Validar acentos, números y mayúsculas
+function validacion(e){
+    var key = e.keyCode || e.which; 
+    var tecla = String.fromCharCode(key).toString();
+    var letrasPermitidas = " abcdefghijklmnñopqrstuvwxyz";
+     
+    if(letrasPermitidas.indexOf(tecla) == -1 ){
+        alert ("ingresa solo letras minúsculas sin acentos y sin números");
+        return false;
+    }
+}
+
 //Encriptación
 function resultadoEncriptar(){
     var textoEncriptado = encriptar(inputText.value);
@@ -20,8 +32,6 @@ function resultadoEncriptar(){
 function encriptar(textoCapturado){
     let llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
-    //convierte a minúsculas
-    textoCapturado = textoCapturado.toLowerCase();
     //encriptación
     for(i = 0; i < llavesEncriptacion.length; i++){
         if(textoCapturado.includes(llavesEncriptacion[i][0])){
@@ -52,8 +62,6 @@ function resultadoDesencriptar(){
 function desencriptar(textoCopiado){
     let llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     
-    //convierte a minúsculas
-    textoCopiado = textoCopiado.toLowerCase();
     //desencriptación
     for(i=0; i < llavesEncriptacion.length; i++){
         if (textoCopiado.includes(llavesEncriptacion[i][1])){
