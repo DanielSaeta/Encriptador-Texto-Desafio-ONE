@@ -32,6 +32,13 @@ function encriptar(textoCapturado){
     return textoCapturado;
 }
 
+//Copiar texto del textarea izquierdo
+function copiar() {
+    outputText.select(); 
+    outputText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(outputText.value);
+}
+
 //Desencriptación
 function resultadoDesencriptar(){
     var textoDesencriptado = desencriptar(inputText.value);
