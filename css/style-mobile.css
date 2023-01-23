@@ -37,6 +37,42 @@
     /* Mensaje de Resultado */
     .mensaje {
         padding: 3.5%;
+    }        
+}
+
+/* Estilo para Celular */
+@media all and (max-width:700px) {
+   /* Cabecera */
+    header, main {
+        padding: 0 4.5%;
+    }
+
+    /* Bloque Izquierdo: Encriptador */
+    .bloque-izq textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    .botones {
+        flex-flow: row wrap;
     }
     
+    .botones input {
+        flex: 1 100%;
+    }
+
+    /* Instrucción */
+    .instruccion {
+        padding: 10%;
+    }
+
+    /* Mensaje de Resultado */
+    .mensaje {
+        padding: 10%;
+    }
+
+    .mensaje textarea {
+        height: 200px;
+        width: 100%;
+    }
 }
