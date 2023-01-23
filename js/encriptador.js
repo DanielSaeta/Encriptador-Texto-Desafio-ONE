@@ -15,10 +15,16 @@ function resultadoEncriptar(){
 } 
 
 function encriptar(textoCapturado){
-    var llavesEncriptacion = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
+    var llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
     //convierte a minúsculas
     textoCapturado = textoCapturado.toLowerCase();
-
+    //encriptación
+    for(i = 0; i < llavesEncriptacion.length; i++){
+        if(textoCapturado.includes(llavesEncriptacion[i][0])){
+            textoCapturado = textoCapturado.replaceAll(llavesEncriptacion[i][0], llavesEncriptacion[i][1]);
+        }
+    }
+    //resultado
     return textoCapturado;
 }
