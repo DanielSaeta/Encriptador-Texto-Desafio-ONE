@@ -44,7 +44,7 @@ header, main {
 /* Cuerpo */
 main {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-evenly;
     gap: 6%;
     margin: 2rem 0;
