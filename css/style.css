@@ -130,6 +130,7 @@ main {
 
 /* Instrucción */
 .instruccion {
+    flex: 1 100%;
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -152,6 +153,7 @@ main {
 
 /* Mensaje de Resultado */
 .mensaje {
+    flex: 1 100%;
     display: none;
     flex-flow: row wrap;
     justify-content: center;

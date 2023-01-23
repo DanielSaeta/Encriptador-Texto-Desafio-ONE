@@ -1,5 +1,5 @@
 /* Estilo para Tablets */
-@media all and (max-width:999px) {
+@media all and (max-width:1000px) {
     /* Cuerpo */
     main {
         flex-flow: row wrap;
@@ -33,6 +33,10 @@
     .textos {
         margin-top: 0;
     }
+
+    /* Mensaje de Resultado */
+    .mensaje {
+        padding: 3.5%;
+    }
     
 }
-
