@@ -19,21 +19,17 @@ function validacion(e) {
 function resultadoEncriptar() {
     var textoEncriptado = encriptar(inputText.value);
 
+    textoEncriptado = textoEncriptado.toLowerCase(); //Convierte el resultado todo en minúsculas
+
     if(inputText.value.length == 0) {
-        //muestra la instrucción 
-        instruccion.style.display = "inline-flex";
-        //oculta el resultado
-        mensaje.style.display = "none";
+        instruccion.style.display = "inline-flex"; //Muestra la instrucción 
+        mensaje.style.display = "none"; //Oculta el resultado
         inputText.focus();
     } else {
-        //muestra el resultado del texto ya encriptado
-        outputText.value = textoEncriptado;
-        //vaciar textarea del bloque izquierdo
-        inputText.value = "";
-        //oculta la instrucción 
-        instruccion.style.display = "none";
-        //muestra el resultado
-        mensaje.style.display = "inline-flex";
+        outputText.value = textoEncriptado; //Muestra el resultado del texto ya encriptado
+        inputText.value = ""; //Vaciar textarea del bloque izquierdo
+        instruccion.style.display = "none"; //Oculta la instrucción 
+        mensaje.style.display = "inline-flex"; //Muestra el resultado
         outputText.focus();
     }
 }
@@ -41,14 +37,14 @@ function resultadoEncriptar() {
 function encriptar(textoCapturado) {
     let llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
-    //encriptación
+    //Encriptación
     for(i = 0; i < llavesEncriptacion.length; i++) {
         if(textoCapturado.includes(llavesEncriptacion[i][0])) {
             textoCapturado = textoCapturado.replaceAll(llavesEncriptacion[i][0], llavesEncriptacion[i][1]);
         }
     }
-    //resultado
-    return textoCapturado;
+    
+    return textoCapturado; //Resultado
 }
 
 //Copiar texto del textarea izquierdo
@@ -62,21 +58,17 @@ function copiar() {
 function resultadoDesencriptar() {
     var textoDesencriptado = desencriptar(inputText.value);
 
+    textoDesencriptado = textoDesencriptado.toLowerCase(); //Convierte el resultado todo en minúsculas
+
     if(inputText.value.length == 0) {
-        //muestra la instrucción 
-        instruccion.style.display = "inline-flex";
-        //oculta el resultado
-        mensaje.style.display = "none";
+        instruccion.style.display = "inline-flex"; //Muestra la instrucción 
+        mensaje.style.display = "none"; //Oculta el resultado
         inputText.focus();
     } else {
-        //muestra el resultado del texto ya desencriptado
-        outputText.value = textoDesencriptado;
-        //vaciar textarea del bloque izquierdo
-        inputText.value = "";
-        //oculta la instrucción 
-        instruccion.style.display = "none";
-        //muestra el resultado
-        mensaje.style.display = "inline-flex";
+        outputText.value = textoDesencriptado; //Muestra el resultado del texto ya desencriptado
+        inputText.value = ""; //Vaciar textarea del bloque izquierdo 
+        instruccion.style.display = "none"; //Oculta la instrucción
+        mensaje.style.display = "inline-flex"; //Muestra el resultado
         outputText.focus();
     }
 } 
