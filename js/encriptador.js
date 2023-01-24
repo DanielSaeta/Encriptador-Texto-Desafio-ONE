@@ -5,11 +5,17 @@ var mensaje = document.querySelector(".mensaje");
 
 //Validar acentos, números y mayúsculas
 function validacion(e) {
-    var key = e.keyCode || e.which; 
+    var key = e.keyCode || e.which;
     var tecla = String.fromCharCode(key).toString();
     var letrasPermitidas = " abcdefghijklmnñopqrstuvwxyz";
+    var teclaEnter = 13;
+    var teclaEspecial = false;
+
+    if(key == teclaEnter) {
+        teclaEspecial = true;
+    }
      
-    if (letrasPermitidas.indexOf(tecla) == -1) {
+    if(letrasPermitidas.indexOf(tecla) == -1 && !teclaEspecial) {
         alert ("Ingresa solo letras minúsculas. No se aceptan acentos, caracteres especiales y números");
         return false;
     }
