@@ -28,16 +28,16 @@
 
         <main>
             <form class="bloque-izq">  
-                <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)"></textarea>
+                <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)" required></textarea>
 
                 <fieldset class="indicacion">
                     <img src="images/icono-exclamacion.png" alt="Icono de Exclamación">
-                    <p class="texto-indicacion">Solo letras minúsculas sin acentos y sin números.</p>
+                    <p class="texto-indicacion">Solo letras minúsculas. No se aceptan acentos, caracteres especiales y números.</p>
                 </fieldset>
 
                 <fieldset class="botones">
-                    <input class="btn-encriptar" type="button" value="Encriptar" onclick="resultadoEncriptar()">
-                    <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="resultadoDesencriptar()">
+                    <input class="btn-encriptar" type="button" type="submit" value="Encriptar" onclick="resultadoEncriptar()">
+                    <input class="btn-desencriptar" type="button" type="submit" value="Desencriptar" onclick="resultadoDesencriptar()">
                 </fieldset>                 
             </form>
 
