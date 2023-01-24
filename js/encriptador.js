@@ -34,6 +34,7 @@ function resultadoEncriptar() {
         instruccion.style.display = "none";
         //muestra el resultado
         mensaje.style.display = "inline-flex";
+        outputText.focus();
     }
 }
 
@@ -76,6 +77,7 @@ function resultadoDesencriptar() {
         instruccion.style.display = "none";
         //muestra el resultado
         mensaje.style.display = "inline-flex";
+        outputText.focus();
     }
 } 
 
