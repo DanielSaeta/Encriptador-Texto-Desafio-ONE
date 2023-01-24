@@ -19,8 +19,6 @@ function validacion(e) {
 function resultadoEncriptar() {
     var textoEncriptado = encriptar(inputText.value);
 
-    textoEncriptado = textoEncriptado.toLowerCase(); //Convierte el resultado todo en minúsculas
-
     if(inputText.value.length == 0) {
         instruccion.style.display = "inline-flex"; //Muestra la instrucción 
         mensaje.style.display = "none"; //Oculta el resultado
@@ -36,6 +34,8 @@ function resultadoEncriptar() {
 
 function encriptar(textoCapturado) {
     let llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+
+    textoCapturado = textoCapturado.toLowerCase(); //Convierte el resultado todo en minúsculas
 
     //Encriptación
     for(i = 0; i < llavesEncriptacion.length; i++) {
@@ -58,8 +58,6 @@ function copiar() {
 function resultadoDesencriptar() {
     var textoDesencriptado = desencriptar(inputText.value);
 
-    textoDesencriptado = textoDesencriptado.toLowerCase(); //Convierte el resultado todo en minúsculas
-
     if(inputText.value.length == 0) {
         instruccion.style.display = "inline-flex"; //Muestra la instrucción 
         mensaje.style.display = "none"; //Oculta el resultado
@@ -76,12 +74,13 @@ function resultadoDesencriptar() {
 function desencriptar(textoCopiado) {
     let llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     
-    //desencriptación
+    textoCopiado = textoCopiado.toLowerCase(); //Convierte el resultado todo en minúsculas
+
+    //Desencriptación
     for(i=0; i < llavesEncriptacion.length; i++) {
         if(textoCopiado.includes(llavesEncriptacion[i][1])) {
             textoCopiado = textoCopiado.replaceAll(llavesEncriptacion[i][1], llavesEncriptacion[i][0]);
         }
     }
-    //resultado
-    return textoCopiado;
+    return textoCopiado; //Resultado
 }
