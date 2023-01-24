@@ -1,5 +1,5 @@
 /* Estilo para Tablets */
-@media all and (max-width:1000px) {
+@media all and (max-width:1090px) {
     /* Cuerpo */
     main {
         flex-flow: row wrap;
